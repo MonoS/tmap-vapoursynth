@@ -1,2 +1,4 @@
+Copied from Code::Blocks build script
+
 g++.exe -fomit-frame-pointer -fexpensive-optimizations -O3 -Wall -std=c++11 -march=native -mtune=native -DBUILD_DLL -Wall -Wextra  -c C:\Users\MonoS\Desktop\tmap\main.cpp -o obj\Release\main.o
 g++.exe -shared -Wl,--output-def=bin\Release\libtmap.def -Wl,--out-implib=bin\Release\libtmap.a -Wl,--dll  obj\Release\main.o  -o bin\Release\tmap.dll -O3 -s -static  -luser32
